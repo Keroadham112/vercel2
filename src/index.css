@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: #06050c;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@layer components {
+  .glass-panel {
+    @apply rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_0_30px_rgba(168,85,247,0.18)] backdrop-blur-xl;
+  }
+
+  .glow-btn {
+    @apply inline-flex items-center justify-center rounded-xl border border-fuchsia-300/70 bg-[linear-gradient(90deg,#a855f7,#d946ef)] px-5 py-2.5 font-medium text-white transition duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(217,70,239,0.45)];
+  }
+
+  .glass-btn {
+    @apply inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-5 py-2.5 font-medium text-zinc-200 transition duration-300 hover:border-fuchsia-300/40 hover:bg-white/10 hover:text-white;
+  }
+
+  .chip {
+    @apply rounded-full border border-fuchsia-300/20 bg-fuchsia-400/10 px-3 py-1 text-xs text-fuchsia-100;
+  }
+}
