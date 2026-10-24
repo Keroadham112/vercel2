@@ -7,8 +7,8 @@ export function ProjectsSection() {
     <section id="projects" className="mx-auto mt-28 max-w-6xl px-6 sm:px-8">
       <SectionHeading
         eyebrow="Selected Builds"
-        title="Projects that combine product engineering and AI interaction"
-        description="Each build is designed for real-world interaction, modern UX, and scalable architecture."
+        title="Projects built for real-world interaction"
+        description="Each build combines thoughtful user experiences with practical, scalable engineering."
       />
 
       <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

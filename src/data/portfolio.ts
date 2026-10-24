@@ -28,24 +28,36 @@ export const projects: Project[] = [
   {
     title: "Digital Twin in Breast Cancer",
     description:
-      "AI-powered system for intelligent simulation and 3D visualization in medical scenarios.",
+      "End-to-end digital twin framework for modeling breast cancer progression, predicting treatment response, and ranking treatment strategies over time.",
     highlights: [
-      "AI-powered system with 3D visualization",
-      "Real-time interaction between frontend and AI model",
+      "Multi-stage prediction pipeline using clinical, MRI-derived, and engineered longitudinal features",
+      "Recursive temporal engine models tumor state evolution from T0 to T3 and projects future trajectories",
+      "Bayesian uncertainty layer produces probability distributions, confidence intervals, and confidence scores",
+      "Treatment simulation compares outcome trajectories and selects the best treatment arm",
+      "Ensemble decision layer combines baseline models, temporal outputs, and Bayesian predictions",
+      "Interactive visualization presents tumor trajectories, 3D animation, confidence gauges, and treatment comparison",
     ],
-    techStack: ["React", "TypeScript", "3D Visualization", "AI Integration"],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Longitudinal ML",
+      "Bayesian Inference",
+      "Treatment Simulation",
+      "3D Visualization",
+    ],
     github: "https://github.com/Keroadham112",
     featured: true,
   },
   {
-    title: "Maswada AI",
+    title: "Northstar Market",
     description:
-      "Modern React 19 application centered around responsive AI interaction and dynamic UI flows.",
+      "Full-stack inventory management system and electronics storefront for managing products, stock, sales, and customer shopping flows.",
     highlights: [
-      "React 19 application with AI interaction",
-      "Dynamic UI and responsive design",
+      "Responsive storefront with product browsing, search, filters, product details, and cart persistence",
+      "Admin dashboard for products, categories, suppliers, customers, purchases, and sales",
+      "Role-based access with ASP.NET Core Web API, Entity Framework Core, and SQLite",
     ],
-    techStack: ["React 19", "TypeScript", "Framer Motion", "AI Features"],
+    techStack: ["React", "TypeScript", "ASP.NET Core", "EF Core", "SQLite"],
     github: "https://github.com/Keroadham112",
   },
   {
