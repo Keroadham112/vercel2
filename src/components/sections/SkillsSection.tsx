@@ -21,23 +21,11 @@ export function SkillsSection() {
             transition={{ duration: 0.55, delay: groupIndex * 0.08 }}
           >
             <h3 className="text-lg font-semibold text-white">{group.title}</h3>
-            <div className="mt-5 space-y-4">
-              {group.skills.map((skill, index) => (
-                <div key={skill.name}>
-                  <div className="mb-1 flex items-center justify-between text-sm">
-                    <span className="text-zinc-200">{skill.name}</span>
-                    <span className="text-fuchsia-300">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 overflow-hidden rounded-full bg-zinc-800/80">
-                    <motion.div
-                      className="h-full rounded-full bg-[linear-gradient(90deg,#a855f7,#d946ef)]"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.9, delay: index * 0.08 }}
-                    />
-                  </div>
-                </div>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {group.skills.map((skill) => (
+                <span key={skill} className="chip !px-3.5 !py-1.5 !text-sm">
+                  {skill}
+                </span>
               ))}
             </div>
           </motion.div>

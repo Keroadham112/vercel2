@@ -32,13 +32,13 @@ export function HeroSection() {
           {profile.summary} Main highlighted build: {featured.title}.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <a className="glow-btn" href={featured.github} target="_blank" rel="noreferrer">
+          <a className="glow-btn" href="#projects">
             View My Work
           </a>
           <a className="glass-btn" href={profile.github} target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a className="glass-btn" href={`mailto:${profile.email}`}>
+          <a className="glass-btn" href={profile.cv} download="Kerolos-Adham-CV.pdf">
             Download CV
           </a>
         </div>
